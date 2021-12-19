@@ -2,24 +2,82 @@
 <html lang="hu">
 <head>
     <title>Mentő+Szinezés</title>
-
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: coral;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        </style>
 </head>
 <body>
 
-    <nav>
-        <a href="https://szabolcsbodi756.github.io/Kolazs/index.html" style="background-color: cornflowerblue;">Főoldal</a>
-        <a href="https://szabolcsbodi756.github.io/Kolazs/Keplink.HTML" style="background-color: darkkhaki;">1. feladat</a>
-        <a href="https://szabolcsbodi756.github.io/Kolazs/Egeszseges.html" style="background-color: darkseagreen;">3. feladat</a>
-        <a href="https://szabolcsbodi756.github.io/Kolazs/Listak.html" style="background-color: goldenrod;">4. feladat</a>
-        <a href="https://szabolcsbodi756.github.io/Kolazs/Orarend.html" style="background-color: lawngreen;">5. feladat</a>
-      </nav>
+    <div class="sidebar">
+        <a href="https://szabolcsbodi756.github.io/Kolazs/index.html">Főoldal</a>
+        <a href="https://szabolcsbodi756.github.io/Kolazs/Keplink.HTML">1.Feladat</a>
+        <a class="active" href="https://szabolcsbodi756.github.io/Kolazs/Szinezes.html">2.Feladat</a>
+        <a href="https://szabolcsbodi756.github.io/Kolazs/Egeszseges.html">3.Feladat</a>
+        <a href="https://szabolcsbodi756.github.io/Kolazs/Listak.html">4.Feladat</a>
+        <a href="https://szabolcsbodi756.github.io/Kolazs/Orarend.html">5.Feladat</a>
+    </div>
 
+    <div class="content">
     <p style="color:chocolate">Bódi Szaboolcs</p>
     <h1 style="color: blueviolet;">Népszerűsítem a tanár úr mentőautós videóját!</h1>
     <h2 style="color: crimson;">Szerintem tök király a videó!</h2>
     <br>
     <a href="https://youtu.be/SwSCTuVzbwg"><img src="https://s13emagst.akamaized.net/products/13327/13326607/images/res_c118afe8af2f19f3919484370f0f1bc7.jpg" alt="mentőautó" title="Mentóautó videó" width="400">
     </a>
+    </div>
 
 </body>
 </html>
