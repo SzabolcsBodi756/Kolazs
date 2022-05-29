@@ -13,7 +13,7 @@ body {
 }
 
 #tavasz{
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 30px;
     float: left;
     border-radius: 50%;
@@ -31,7 +31,7 @@ body {
 }
 
 #nyar{
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 30px;
     float: left;
     border-radius: 50%;
@@ -49,7 +49,7 @@ body {
 }
 
 #osz{
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 30px;
     float: left;
     border-radius: 50%;
@@ -67,7 +67,7 @@ body {
 }
 
 #tel{
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 30px;
     float: left;
     border-radius: 50%;
@@ -114,9 +114,22 @@ body {
   div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 600px;
+  }
+
+  footer{
+    margin-top: 35px;
+    float: initial;
   }
   
+  @media screen and (max-width: 1200px) {
+
+    #tavasz{margin-top: 60px;}
+    #nyar{margin-top: 60px;}
+    #osz{margin-top: 75px;}
+    #tel{margin-top: 75px;}
+  }
+
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
@@ -125,11 +138,32 @@ body {
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
-  }
+
+    #tavasz{margin-top: 60px;}
+    #nyar{margin-top: 60px;}
+    #osz{margin-top: 75px;}
+    #tel{margin-top: 75px;}
+
+    footer{
+      margin-top: 55px;
+      position: fixed;
+    }
+
+    }
   
   @media screen and (max-width: 400px) {
     .sidebar a {
       text-align: center;
       float: none;
+    }
+
+    #tavasz{margin-top: 90px;}
+    #nyar{margin-top: 90px;}
+    #osz{margin-top: 105px;}
+    #tel{margin-top: 105px;}
+
+    footer{
+      margin-top: 85px;
+      position: fixed;
     }
   }
